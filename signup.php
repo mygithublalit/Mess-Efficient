@@ -1,0 +1,50 @@
+<?php
+    
+    $server = "localhost";
+   $username = "root";
+   $password = "";
+   $database = "registration";
+
+   $con = mysqli_connect($server , $username , $password , $database);
+   if(!$con){
+       echo "connection to the database is fail";
+   }
+
+   $email=$_POST['email'];
+   $password=$_POST['password'];
+
+   $Q2 = "exist (select * from )";
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup page</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <img class="bg" src="bg.jpg" alt="NITK">
+    <div class="container">
+        <h1>WELCOME TO NITK MESS</h1>
+        <p> Register Yourself </p>
+
+        <form action="index.php" method="POST">
+            <input type="text" name="first_name" id="name" placeholder="enter your first name"> <br>
+            <input type="text" name="last_name" id="name" placeholder="enter your last name"> <br>
+            <input type="email" name="email" id="email" , placeholder="enter your email id"> <br>
+            <input type="phone" name="phone" id="phine" placeholder="enter phone number"> <br>
+            <input type="password" name="password" id="password" placeholder="enter password"> <br>
+
+            <button type="submit" class="btn">signup</button>
+        </form>
+        
+    </div>
+</body>
+
+</html>

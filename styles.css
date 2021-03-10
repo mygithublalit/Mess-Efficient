@@ -1,0 +1,56 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing:border-box;
+}
+
+.container{
+    max-width:fit-content;
+    padding: 0%;;
+    margin: auto;
+    text-align: center;
+}
+
+.container h1, p{
+    text-align: center;
+}
+
+form{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+input{
+    border: black;
+    border-radius: 12px;
+    width:auto;
+    font-size:small;
+    padding: 6px;
+    margin: 12px;
+}
+
+.btn{
+    background-color: blueviolet;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: large;
+    color: white;
+    border: white ;
+    border-radius: 10px;
+    cursor: pointer;
+    height: 30px;
+}
+
+.bg{
+    width:100%;
+    position: absolute;
+    z-index: -1;
+    opacity: .3;
+}
+
+.menu1{
+    text-align: center;
+    display: inline;
+}

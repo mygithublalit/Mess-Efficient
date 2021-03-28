@@ -8,17 +8,18 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <img class="bg" src="bg.jpg" alt="NITK">
+    <img class="bg" src="css/bg.jpg" alt="NITK">
     <div class="container">
         <h1>WELCOME TO NITK MESS</h1>
         <h3> Login Form </h3>
         <p>login with email and password</p>
 
-        <form action="index.php" method="POST">
+        <form action="signin.php" method="POST">
             <input type="email" name="email" id="email" , placeholder="enter your email id"> <br>
             <input type="password" name="password" id="password" placeholder="enter password"> <br>
 
-            <button type="submit" class="btn">signin</button>
+            <button type="submit" class="btn" name="submit">Sign In</button>
+            <a href="signup.html"><u style="color: rgb(184, 29, 137);">Forget password?</u></a>
         </form>
     
 </body>

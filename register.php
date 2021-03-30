@@ -33,6 +33,7 @@
    $friday = implode($day5);
    $saturday = implode($day6);
    $sunday = implode($day7);
+<<<<<<< HEAD
 
    $query1 = "insert into student_record (s_id,monday,tuesday,wednesday,thursday,friday,satruday,sunday)
                values('$student_Id','$monday','$tuesday','$wednesday','$thursday','$friday','$saturday','$sunday');";
@@ -41,6 +42,14 @@
         echo "thankyou for giving your valuble time<br>";
     
         echo "Your record is saved in mess database successful";
+=======
+   
+   $query1 = "insert into student_record (s_id,monday,tuesday,wednesday,thursday,friday,saturday,sunday)
+               values('$student_Id','$monday','$tuesday','$wednesday','$thursday','$friday','$saturday','$sunday');";
+
+    if($con->query($query1)==true){
+       echo "Your record is saved in mess database successful";
+>>>>>>> 9023102b542abad17b4606327c14cee3ea75a0ce
     }
     else{
         echo "ERROR : $con->error";
